@@ -1,0 +1,131 @@
+/* Кастомные цвета Цифровой РОП / BVMax */
+
+:root {
+  /* Основной зелёный цвет платформы */
+  --md-primary-fg-color: #2ECC71;
+  --md-primary-fg-color--light: #58D68D;
+  --md-primary-fg-color--dark: #27AE60;
+
+  /* Акцентный цвет */
+  --md-accent-fg-color: #2ECC71;
+  --md-accent-fg-color--transparent: rgba(46, 204, 113, 0.1);
+
+  /* Оранжевый для логотипа и особых акцентов */
+  --bvmax-orange: #F7941D;
+}
+
+/* Заголовок сайта */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Ссылки */
+.md-typeset a {
+  color: var(--md-primary-fg-color--dark);
+}
+
+.md-typeset a:hover {
+  color: var(--md-primary-fg-color);
+}
+
+/* Навигация - активный элемент */
+.md-nav__link--active {
+  color: var(--md-primary-fg-color) !important;
+  font-weight: 600;
+}
+
+/* Кнопки */
+.md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+.md-button--primary:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  border-color: var(--md-primary-fg-color--dark);
+}
+
+/* Admonitions - блок "Интерфейс" (синий) */
+.md-typeset .admonition.interface,
+.md-typeset details.interface {
+  border-color: #3498DB;
+}
+
+.md-typeset .interface > .admonition-title,
+.md-typeset .interface > summary {
+  background-color: rgba(52, 152, 219, 0.1);
+  border-color: #3498DB;
+}
+
+.md-typeset .interface > .admonition-title::before,
+.md-typeset .interface > summary::before {
+  background-color: #3498DB;
+  -webkit-mask-image: var(--md-admonition-icon--info);
+  mask-image: var(--md-admonition-icon--info);
+}
+
+/* Admonitions - блок "Техническое" (оранжевый) */
+.md-typeset .admonition.technical,
+.md-typeset details.technical {
+  border-color: #E67E22;
+}
+
+.md-typeset .technical > .admonition-title,
+.md-typeset .technical > summary {
+  background-color: rgba(230, 126, 34, 0.1);
+  border-color: #E67E22;
+}
+
+.md-typeset .technical > .admonition-title::before,
+.md-typeset .technical > summary::before {
+  background-color: #E67E22;
+  -webkit-mask-image: var(--md-admonition-icon--example);
+  mask-image: var(--md-admonition-icon--example);
+}
+
+/* Таблицы - заголовок */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Скриншоты - стиль */
+.md-typeset img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+/* Подпись к скриншотам */
+.md-typeset figcaption {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Поиск - подсветка */
+.md-search-result mark {
+  background-color: rgba(46, 204, 113, 0.3);
+}
+
+/* Футер */
+.md-footer {
+  background-color: #2c3e50;
+}
+
+/* TOC - активный элемент */
+.md-nav__link--passed {
+  color: var(--md-primary-fg-color--light);
+}
+
+/* Код - подсветка */
+.md-typeset code {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2c3e50;
+}
+
+/* Хлебные крошки */
+.md-path__item {
+  color: var(--md-primary-fg-color--dark);
+}

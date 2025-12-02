@@ -1,0 +1,104 @@
+site_name: Цифровой РОП — Руководство пользователя
+site_url: https://bvmax.github.io/digital-rop-docs/
+site_description: Полное руководство по работе с облачной платформой анализа звонков Цифровой РОП
+site_author: BVMax
+
+# Репозиторий
+repo_url: https://github.com/bvmax/digital-rop-docs
+repo_name: bvmax/digital-rop-docs
+
+# Тема Material
+theme:
+  name: material
+  language: ru
+
+  # Цвета платформы
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+
+  # Шрифты
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Логотип и иконки
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+  # Фичи
+  features:
+    - navigation.instant        # Мгновенная загрузка страниц
+    - navigation.tracking       # URL обновляется при скролле
+    - navigation.tabs           # Табы в шапке
+    - navigation.sections       # Разделы в сайдбаре
+    - navigation.expand         # Раскрытие разделов
+    - navigation.top            # Кнопка "наверх"
+    - search.suggest            # Автодополнение поиска
+    - search.highlight          # Подсветка найденного
+    - content.code.copy         # Копирование кода
+    - content.tabs.link         # Связанные табы
+    - toc.follow                # TOC следует за скроллом
+
+# Плагины
+plugins:
+  - search:
+      lang: ru
+  - glightbox                   # Увеличение картинок по клику
+
+# Расширения Markdown
+markdown_extensions:
+  - admonition                  # Блоки NOTE, WARNING и т.д.
+  - pymdownx.details            # Сворачиваемые блоки
+  - pymdownx.superfences        # Улучшенные блоки кода
+  - pymdownx.tabbed:            # Табы
+      alternate_style: true
+  - pymdownx.emoji:             # Эмодзи
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list                   # Атрибуты для элементов
+  - md_in_html                  # Markdown внутри HTML
+  - tables                      # Таблицы
+  - toc:
+      permalink: true           # Якорные ссылки
+      toc_depth: 3
+
+# Кастомные стили
+extra_css:
+  - stylesheets/extra.css
+
+# Навигация
+nav:
+  - Главная: index.md
+  - Быстрый старт:
+    - Что такое Цифровой РОП: start/about.md
+    - Регистрация и вход: start/registration.md
+    - Первые шаги: start/first-steps.md
+  - Настройки:
+    - Шаблоны скриптов: settings/scripts-templates.md
+    - Скрипты и промты: settings/scripts-prompts.md
+    - Конверсия: settings/conversion.md
+    - Дополнительные промты: settings/additional-prompts.md
+    - Таблицы: settings/tables.md
+    - Пользователи: settings/users.md
+  - Аналитика:
+    - Коммуникации: analytics/communications.md
+    - История сделок: analytics/deals-history.md
+    - Менеджеры: analytics/managers.md
+    - Таблицы: analytics/tables.md
+  - Графики:
+    - Оценка: charts/score.md
+    - Менеджеры: charts/managers.md
+  - Тесты: tests/index.md
+  - Биллинг: billing/index.md
+  - FAQ: faq.md
+  - Словарь терминов: glossary.md
+
+# Доп. информация в футере
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/tchashchin
+      name: Поддержка в Telegram
+  generator: false

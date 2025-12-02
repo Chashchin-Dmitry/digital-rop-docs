@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# MkDocs build output
+site/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Word temp files
+~$*.docx
